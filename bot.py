@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
 # তোমার Netlify HTML লিঙ্ক
-HTML_LINK = "https://helpful-blancmange-f00c2d.netlify.app/"
+HTML_LINK = "https://fanciful-haupia-f0127e.netlify.app/"
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -28,3 +28,4 @@ def webhook():
 
 if __name__ == "__main__":
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
+
